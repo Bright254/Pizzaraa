@@ -1,13 +1,14 @@
 @use "../../utilities/variables" as *;
 @use"../../utilities/mixins" as *;
 .footer{
-    @include flex (space-between,center);
+    @include flex (center,center);
+    justify-content: space-between;
     font-family: "Kanit", sans-serif;
     background-color: $black;
     padding: 10px;
-    @media (min-width: 768px) {
-        padding: 2rem;
-        font-size: 1.1rem;
+    @media (max-width: 768px) {
+        flex-direction: column;
+        text-align: center;
       }
 }
 .pizzara{
@@ -20,7 +21,6 @@
 .links{
     color: white;
     .footer-links{
-        @include flex (space-between,center);
         list-style: none;
         li{
             &:hover{

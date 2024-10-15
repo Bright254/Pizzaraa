@@ -5,6 +5,9 @@
    font-family: "Kanit", sans-serif;
     padding: 20px;
     margin: 10px;
+    @media screen  and (max-width:768px){
+      flex-direction: column;
+}
  }
  .h1-heading{
    font-size: 70px;

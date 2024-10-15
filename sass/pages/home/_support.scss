@@ -3,10 +3,15 @@
 .support-section{
     font-family: "Kanit", sans-serif;
     margin-bottom: 30px;
+   
+      
 }
 .need{
     color: $primary-color;
     text-align: center;
+    @media screen  and (max-width:768px){
+        flex-direction: column;
+}
 }
 .center-h1{
     font-size: 40px;
@@ -14,14 +19,19 @@
     .our{
         color: $primary-color;
     }
+    @media screen  and (max-width:768px){
+        flex-direction: column;
+}
 }
 .support-box{
     @include flex (space-between,center);
-
-   
+    @media screen  and (max-width:768px){
+    flex-direction: column;
+    gap: 30px;
+    }
 }
 .mail{
-    padding: 1PX;
+    padding: 1px;
     align-items: center;
     text-align: center;
     border: 1px solid $light-grey;
@@ -33,7 +43,7 @@
     }
 }
 .support{
-    padding: 1PX;
+    padding: 1px;
     align-items: center;
     text-align: center;
     border: 1px solid $light-grey;
@@ -45,7 +55,7 @@
     }
 }
 .call{
-    padding: 1PX;
+    padding: 1px;
     align-items: center;
     text-align: center;
     border: 1px solid $light-grey;

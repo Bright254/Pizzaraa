@@ -20,7 +20,7 @@
     text-align: center;
     padding-bottom: 10px
 }
-ul{
+.ul-menu{
     @include flex(space-between,center);
     list-style: none;
     li{

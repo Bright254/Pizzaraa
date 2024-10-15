@@ -3,6 +3,10 @@
 .pizza-menu{
     font-family: "Kanit", sans-serif;
     padding: 2%;
+       
+     
+    }
+      
    
 
 .orange-1{
@@ -14,7 +18,7 @@
     text-align: center;
     padding-bottom: 10px
 }
-ul{
+.ul-menu{
     @include flex(space-between,center);
     list-style: none;
     li{
@@ -23,11 +27,17 @@ ul{
     }
 }
 }
-}
+
 .menu-pizza{
     @include flex(space-between,center);
     gap: 40px; 
     margin-top: 70px; 
+    @media screen and (max-width: 768px) {
+        .pizza-cart{
+           flex-direction: column;
+           gap: 20px;
+         }
+        }
 }
 .pizza-move{
     margin: -70px;
@@ -77,3 +87,4 @@ ul{
      background-color: #444; 
 }
 }
+
