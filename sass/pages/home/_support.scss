@@ -1,0 +1,58 @@
+@use "../../utilities/variables" as *;
+@use"../../utilities/mixins" as *;
+.support-section{
+    font-family: "Kanit", sans-serif;
+    margin-bottom: 30px;
+}
+.need{
+    color: $primary-color;
+    text-align: center;
+}
+.center-h1{
+    font-size: 40px;
+    text-align: center;
+    .our{
+        color: $primary-color;
+    }
+}
+.support-box{
+    @include flex (space-between,center);
+
+   
+}
+.mail{
+    padding: 1PX;
+    align-items: center;
+    text-align: center;
+    border: 1px solid $light-grey;
+    border-radius: 10px;
+    width: 30%;
+    background-color: $light-grey;
+    .gray{
+        color: $secondary-color;
+    }
+}
+.support{
+    padding: 1PX;
+    align-items: center;
+    text-align: center;
+    border: 1px solid $light-grey;
+    border-radius: 10px;
+    width: 30%;
+    background-color: $light-grey;
+    .gray{
+        color: $secondary-color;
+    }
+}
+.call{
+    padding: 1PX;
+    align-items: center;
+    text-align: center;
+    border: 1px solid $light-grey;
+    border-radius: 10px;
+    width: 30%;
+    background-color: $light-grey;
+    .gray{
+        color: $secondary-color;
+    }
+}
