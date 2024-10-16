@@ -105,15 +105,26 @@ a:hover {
 @media screen and (max-width: 768px) {
   .hero-section {
     flex-direction: column;
+    text-align: center;
   }
 }
 
 .h1-heading {
   font-size: 70px;
 }
+@media screen and (max-width: 576px) {
+  .h1-heading {
+    font-size: 40px;
+  }
+}
 
 .paragraph {
   font-size: 20px;
+}
+@media screen and (max-width: 576px) {
+  .paragraph {
+    font-size: 16px;
+  }
 }
 
 p {
@@ -129,6 +140,11 @@ p {
 .search-bar {
   outline: none;
   border: none;
+}
+@media screen and (max-width: 576px) {
+  .search-bar {
+    flex-direction: column;
+  }
 }
 
 .btn {
@@ -146,6 +162,12 @@ p {
 .btn:hover {
   background-color: #444;
 }
+@media screen and (max-width: 576px) {
+  .btn {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
 
 .input {
   width: 200px;
@@ -153,6 +175,11 @@ p {
   border: none;
   outline: none;
   color: #F4F7FB;
+}
+@media screen and (max-width: 576px) {
+  .input {
+    width: 100%;
+  }
 }
 
 .reviews {
@@ -163,6 +190,13 @@ p {
   flex-wrap: nowrap;
   margin: 2rem 0;
   width: 450px;
+}
+@media screen and (max-width: 768px) {
+  .reviews {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
 }
 
 .review-box {
@@ -176,8 +210,7 @@ p {
 }
 @media (max-width: 768px) {
   .review-box {
-    flex-direction: column;
-    align-items: center;
+    width: 100%;
   }
 }
 
@@ -214,6 +247,13 @@ p {
   padding-left: 30px;
   margin-right: 200px;
   padding-top: 30px;
+}
+@media (max-width: 768px) {
+  .pizza-hero {
+    margin-right: 0;
+    padding-left: 0;
+    text-align: center;
+  }
 }
 
 .big-pizza {
@@ -265,10 +305,14 @@ p {
   gap: 40px;
   margin-top: 70px;
 }
-@media screen and (max-width: 768px) {
-  .menu-pizza .pizza-cart {
-    flex-direction: column;
-    gap: 20px;
+@media screen and (max-width: 576px) {
+  .menu-pizza {
+    display: flex;
+    justify-content: column;
+    align-items: center;
+    flex-direction: row row;
+    flex-wrap: nowrap;
+    gap: 30px;
   }
 }
 
@@ -306,6 +350,11 @@ p {
 }
 .pizza-cart .shrimp {
   color: #8a8a8a;
+}
+@media screen and (max-width: 576px) {
+  .pizza-cart {
+    width: 100%;
+  }
 }
 
 .btn-view {
@@ -597,9 +646,9 @@ p {
   background-color: #444;
 }
 
-@media (min-width: 576px) {
-  .product-grid {
-    grid-template-columns: repeat(1, 1fr);
+@media (min-width: 768px) {
+  .pizza-menu {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 .footer {
