@@ -32,12 +32,10 @@
     @include flex(space-between,center);
     gap: 40px; 
     margin-top: 70px; 
-    @media screen and (max-width: 768px) {
-        .pizza-cart{
-           flex-direction: column;
-           gap: 20px;
-         }
-        }
+    @media screen and (max-width: 576px) {
+        @include flex(column, center);
+        gap: 30px;
+    }
 }
 .pizza-move{
     margin: -70px;
@@ -69,6 +67,9 @@
     background-color: $light-grey;
     .shrimp{
         color:#8a8a8a;
+    }
+    @media screen and (max-width: 576px) {
+        width: 100%; 
     }
 }
 .btn-view{

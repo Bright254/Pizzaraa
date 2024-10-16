@@ -5,15 +5,22 @@
    font-family: "Kanit", sans-serif;
     padding: 20px;
     margin: 10px;
-    @media screen  and (max-width:768px){
+    @media screen and (max-width: 768px) {
       flex-direction: column;
-}
+      text-align: center; 
+    }
  }
  .h1-heading{
    font-size: 70px;
+   @media screen and (max-width: 576px) {
+      font-size: 40px; 
+    }
  }
  .paragraph{
    font-size: 20px;
+   @media screen and (max-width: 576px) {
+      font-size: 16px; 
+    }
  }
  p{
     font-size: 1.2rem;
@@ -28,6 +35,9 @@
 .search-bar{
    outline: none;
    border: none;
+   @media screen and (max-width: 576px) {
+      flex-direction: column;
+    }
 }
  .btn{
    width: 90px;
@@ -43,18 +53,30 @@
    &:hover{
     background-color: #444;
    }
+   @media screen and (max-width: 576px) {
+      width: 100%; 
+      border-radius: 10px; 
+    }
  }
  .input{
    width: 200px;
    height:60px;
    border:none;
    outline:none;
-   color:$light-grey
+   color:$light-grey;
+   @media screen and (max-width: 576px) {
+      width: 100%;
+    }
  }
  .reviews{
    @include flex(space-between,center);
    margin:2rem 0;
-   width:450px
+   width:450px;
+   @media screen and (max-width: 768px) {
+      flex-direction: column;
+      width: 100%;
+      gap: 10px;
+    }
 }
 .review-box{
    padding: 1PX;
@@ -65,8 +87,7 @@
    width: 30%;
    background-color: $light-grey;
    @media (max-width: 768px) {
-      flex-direction: column;
-      align-items: center;
+      width: 100%; 
     }
 }
 .background-1{
@@ -92,6 +113,11 @@
    padding-left: 30px;
    margin-right: 200px;
    padding-top: 30px;
+   @media (max-width: 768px) {
+      margin-right: 0;
+      padding-left: 0;
+      text-align: center;
+    }
   
 }
 .big-pizza{
